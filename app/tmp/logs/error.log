@@ -1,0 +1,18 @@
+2019-05-07 15:22:02 Error: [MissingHelperException] Helper class WWW_ROOTHelper could not be found.
+Exception Attributes: array (
+  'class' => 'WWW_ROOTHelper',
+  'plugin' => false,
+)
+Request URL: /cakephp/Common
+Stack Trace:
+#0 /www/htdocs/cakephp/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('WWW_ROOT')
+#1 /www/htdocs/cakephp/lib/Cake/View/View.php(858): HelperCollection->__isset('WWW_ROOT')
+#2 /www/htdocs/cakephp/app/View/Common/index.ctp(5): View->__get('WWW_ROOT')
+#3 /www/htdocs/cakephp/lib/Cake/View/View.php(971): include('/www/htdocs/cak...')
+#4 /www/htdocs/cakephp/lib/Cake/View/View.php(933): View->_evaluate('/www/htdocs/cak...', Array)
+#5 /www/htdocs/cakephp/lib/Cake/View/View.php(473): View->_render('/www/htdocs/cak...')
+#6 /www/htdocs/cakephp/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#7 /www/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /www/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CommonController), Object(CakeRequest))
+#9 /www/htdocs/cakephp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
